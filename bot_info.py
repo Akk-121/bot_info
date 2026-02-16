@@ -10,6 +10,11 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, FSInputFile
 import os
 
+# Импортируем функцию keep_alive
+from keep_alive import keep_alive
+# Запускаем keep-alive сервер перед созданием бота
+keep_alive()
+
 # import ssl
 # ssl._create_default_https_context = ssl._create_unverified_context
 
